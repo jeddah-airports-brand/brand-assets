@@ -157,6 +157,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
   header.top{padding-block:20px 12px}
   .brand svg{height:42px}
   .iconbtn .t{display:none}
+  .tabs a{padding:14px 9px;font-size:15px}
   .iconbtn{padding:0 11px}
   .tpls{grid-template-columns:minmax(0,1fr)}
   .canvasbox{aspect-ratio:4/3}
@@ -192,6 +193,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
     <a href="#colours" data-i="t_col">الألوان</a>
     <a href="#fonts" data-i="t_font">الخطوط</a>
     <a href="#templates" data-i="t_tpl">القوالب</a>
+    <a href="#guides" data-i="t_gd">الأدلة</a>
   </div>
 </nav>
 
@@ -350,9 +352,36 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
     </div>
   </div>
 </section>
+
+<section id="guides">
+  <div class="wrap">
+    <div class="shead">
+      <h2 data-i="gd_h">الأدلة والمراجع</h2>
+      <p data-i="gd_p">مراجع هوية مطار الملك عبدالعزيز الدولي.</p>
+    </div>
+    <div class="tpls">
+      <article class="tc">
+        <div class="pv"><img src="assets/img/kaia-guide-preview.jpg" alt=""></div>
+        <div class="body">
+          <h3 data-i="kg_t">دليل هوية مطار الملك عبدالعزيز الدولي</h3>
+          <div class="meta"><span class="num" dir="ltr">.PDF</span><span><span class="num">64</span> <span data-i="pages">صفحة</span></span><span class="num" dir="ltr">4.1 MB</span></div>
+          <a class="sbtn" href="downloads/KAIA-Brand-Manual.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></svg><span data-i="dlg">تنزيل الملف</span></a>
+        </div>
+      </article>
+      <article class="tc">
+        <div class="pv"><img src="assets/img/sop-preview.jpg" alt=""></div>
+        <div class="body">
+          <h3 data-i="sp_t">Sense of Place — التصاميم الرئيسية</h3>
+          <div class="meta"><span class="num" dir="ltr">.PPTX</span><span><span class="num">42</span> <span data-i="slides">شريحة</span></span><span class="num" dir="ltr">25 MB</span></div>
+          <a class="sbtn" href="downloads/Jeddah-Airports-Sense-of-Place.pptx" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></svg><span data-i="dlg">تنزيل الملف</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer><div class="wrap"><span data-i="foot">© مطارات جدة</span><span class="credit" dir="ltr">Designed by Mohammed Wagih <span class="num">· v1.0</span></span></div></footer>
+<footer><div class="wrap"><span data-i="foot">© مطارات جدة</span><span class="credit" dir="ltr">Designed by Mohammed Wagih <span class="num">· v1.1</span></span></div></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
@@ -366,10 +395,10 @@ const LOGO_META={
   'kaia-mark':{ar:'الشعار فقط',en:'Symbol only',grp:'kaia',file:'KAIA-Symbol'}
 };
 const T={
- ar:{t_logo:'الشعارات',t_col:'الألوان',t_font:'الخطوط',t_tpl:'القوالب',logo_h:'الشعارات',logo_p:'اختر الشعار ولونه وخلفيته والمقاس اللي تحتاجه، وحمّله جاهز.',f_logo:'الشعار',g_jac:'مطارات جدة',g_kaia:'مطار الملك عبدالعزيز الدولي',f_color:'لون الشعار',c_orig:'اللون الأصلي',c_white:'أبيض',f_bg:'الخلفية',b_none:'مفرغة',b_solid:'بخلفية',f_size:'المقاس (العرض)',s_s:'صغير',s_m:'متوسط',s_l:'كبير',s_c:'مقاس مخصص',s_c2:'عرض × ارتفاع',f_q:'الجودة',q1:'عادية',q2:'عالية',q4:'للطباعة',f_fmt:'الصيغة',dl:'تنزيل الشعار',col_h:'الألوان',col_p:'اضغط على أي قيمة لنسخها.',col_main:'الألوان الأساسية',col_sec:'الألوان الثانوية',font_h:'الخطوط',font_p:'ثلاث عائلات خطوط فقط في كل مواد الهوية.',u_taj:'لكل النصوص العربية.',u_seq:'لكل الأرقام، والعناوين الإنجليزية.',u_fs:'للنصوص الإنجليزية الثانوية والفقرات.',dlf:'تنزيل الخط',tpl_h:'القوالب الرسمية',tpl_p:'ابدأ عرضك أو مستندك من القالب الرسمي.',ppt_t:'قالب العروض — PowerPoint',doc_t:'قالب المستندات — Word',slides:'شريحة',dlt:'تنزيل القالب',foot:'© مطارات جدة',lang:'English',
+ ar:{t_logo:'الشعارات',t_col:'الألوان',t_font:'الخطوط',t_tpl:'القوالب',t_gd:'الأدلة',gd_h:'الأدلة والمراجع',gd_p:'مراجع هوية مطار الملك عبدالعزيز الدولي.',kg_t:'دليل هوية مطار الملك عبدالعزيز الدولي',sp_t:'Sense of Place — التصاميم الرئيسية',pages:'صفحة',dlg:'تنزيل الملف',logo_h:'الشعارات',logo_p:'اختر الشعار ولونه وخلفيته والمقاس اللي تحتاجه، وحمّله جاهز.',f_logo:'الشعار',g_jac:'مطارات جدة',g_kaia:'مطار الملك عبدالعزيز الدولي',f_color:'لون الشعار',c_orig:'اللون الأصلي',c_white:'أبيض',f_bg:'الخلفية',b_none:'مفرغة',b_solid:'بخلفية',f_size:'المقاس (العرض)',s_s:'صغير',s_m:'متوسط',s_l:'كبير',s_c:'مقاس مخصص',s_c2:'عرض × ارتفاع',f_q:'الجودة',q1:'عادية',q2:'عالية',q4:'للطباعة',f_fmt:'الصيغة',dl:'تنزيل الشعار',col_h:'الألوان',col_p:'اضغط على أي قيمة لنسخها.',col_main:'الألوان الأساسية',col_sec:'الألوان الثانوية',font_h:'الخطوط',font_p:'ثلاث عائلات خطوط فقط في كل مواد الهوية.',u_taj:'لكل النصوص العربية.',u_seq:'لكل الأرقام، والعناوين الإنجليزية.',u_fs:'للنصوص الإنجليزية الثانوية والفقرات.',dlf:'تنزيل الخط',tpl_h:'القوالب الرسمية',tpl_p:'ابدأ عرضك أو مستندك من القالب الرسمي.',ppt_t:'قالب العروض — PowerPoint',doc_t:'قالب المستندات — Word',slides:'شريحة',dlt:'تنزيل القالب',foot:'© مطارات جدة',lang:'English',
    n_svg:'ملف فكتور يكبر لأي مقاس بدون ما تتأثر جودته، فالمقاس والجودة ما يلزمون.',n_jpg:'صيغة JPG ما تدعم الخلفية المفرغة، فتنزل بخلفية.',n_png:'',copied:'تم النسخ',done:'تم تنزيل الشعار',
    cn:{navy:'كحلي',blue:'أزرق',sky:'سماوي',white:'أبيض',teal:'فيروزي',purple:'بنفسجي',orange:'برتقالي',grey:'رمادي فاتح'}},
- en:{t_logo:'Logos',t_col:'Colours',t_font:'Fonts',t_tpl:'Templates',logo_h:'Logos',logo_p:'Pick a logo, its colour, background and size, then download it ready to use.',f_logo:'Logo',g_jac:'Jeddah Airports',g_kaia:'King Abdulaziz International Airport',f_color:'Logo colour',c_orig:'Original colour',c_white:'White',f_bg:'Background',b_none:'Transparent',b_solid:'Solid',f_size:'Size (width)',s_s:'Small',s_m:'Medium',s_l:'Large',s_c:'Custom size',s_c2:'width × height',f_q:'Quality',q1:'Standard',q2:'High',q4:'Print',f_fmt:'Format',dl:'Download logo',col_h:'Colours',col_p:'Tap any value to copy it.',col_main:'Primary colours',col_sec:'Secondary colours',font_h:'Fonts',font_p:'Three type families, used across every brand material.',u_taj:'All Arabic text.',u_seq:'All numbers, and English headlines.',u_fs:'Secondary English text and body copy.',dlf:'Download font',tpl_h:'Official templates',tpl_p:'Start your deck or document from the official template.',ppt_t:'Presentation template — PowerPoint',doc_t:'Document template — Word',slides:'slides',dlt:'Download template',foot:'© Jeddah Airports',lang:'العربية',
+ en:{t_logo:'Logos',t_col:'Colours',t_font:'Fonts',t_tpl:'Templates',t_gd:'Guides',gd_h:'Guides & references',gd_p:'Identity references for King Abdulaziz International Airport.',kg_t:'KAIA Brand Manual',sp_t:'Sense of Place — Master Artworks',pages:'pages',dlg:'Download file',logo_h:'Logos',logo_p:'Pick a logo, its colour, background and size, then download it ready to use.',f_logo:'Logo',g_jac:'Jeddah Airports',g_kaia:'King Abdulaziz International Airport',f_color:'Logo colour',c_orig:'Original colour',c_white:'White',f_bg:'Background',b_none:'Transparent',b_solid:'Solid',f_size:'Size (width)',s_s:'Small',s_m:'Medium',s_l:'Large',s_c:'Custom size',s_c2:'width × height',f_q:'Quality',q1:'Standard',q2:'High',q4:'Print',f_fmt:'Format',dl:'Download logo',col_h:'Colours',col_p:'Tap any value to copy it.',col_main:'Primary colours',col_sec:'Secondary colours',font_h:'Fonts',font_p:'Three type families, used across every brand material.',u_taj:'All Arabic text.',u_seq:'All numbers, and English headlines.',u_fs:'Secondary English text and body copy.',dlf:'Download font',tpl_h:'Official templates',tpl_p:'Start your deck or document from the official template.',ppt_t:'Presentation template — PowerPoint',doc_t:'Document template — Word',slides:'slides',dlt:'Download template',foot:'© Jeddah Airports',lang:'العربية',
    n_svg:'A vector file scales to any size without losing quality, so size and quality don’t apply.',n_jpg:'JPG can’t be transparent, so it downloads with a background.',n_png:'',copied:'Copied',done:'Logo downloaded',
    cn:{navy:'Navy',blue:'Blue',sky:'Sky',white:'White',teal:'Teal',purple:'Purple',orange:'Orange',grey:'Light grey'}}
 };
