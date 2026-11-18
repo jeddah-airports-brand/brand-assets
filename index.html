@@ -41,11 +41,11 @@ button{cursor:pointer}
 
 /* header */
 header.top{padding-block:28px 18px}
-.top .wrap{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
 .brand svg{height:54px;width:auto;display:block}
 .brand svg *{fill:var(--logo)}
-.brand .sub{font-family:var(--num);font-weight:400;font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.brand .sub{font-family:var(--num);font-weight:400;font-size:26px;line-height:1.1;letter-spacing:0;color:var(--ink)}
 .tools{display:flex;gap:6px}
 .iconbtn{display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 12px;border:1px solid var(--line);border-radius:999px;background:transparent;font-size:14px}
 .iconbtn:hover{border-color:var(--accent);color:var(--accent)}
@@ -172,7 +172,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
 <header class="top">
   <div class="wrap">
     <div class="brand" aria-label="Jeddah Airports Brand Assets">
-      <span id="hdrLogo"></span>
       <span class="sub">Brand Assets</span>
     </div>
     <div class="tools">
@@ -390,7 +389,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
 </section>
 </main>
 
-<footer><div class="wrap"><span data-i="foot">© مطارات جدة</span><span class="credit" dir="ltr">Designed by Mohammed Wagih <span class="num">· v1.2</span></span></div></footer>
+<footer><div class="wrap"><span data-i="foot">© مطارات جدة</span><span class="credit" dir="ltr">Designed by Mohammed Wagih <span class="num">· v1.3</span></span></div></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
@@ -556,7 +555,7 @@ function currentDark(){const t=document.documentElement.dataset.theme; if(t) ret
 function syncThemeIcon(){const d=currentDark(); $('#icoMoon').toggleAttribute('hidden',d); $('#icoSun').toggleAttribute('hidden',!d)}
 
 // init
-$('#hdrLogo').innerHTML=LOGOS['jac-full'];
+
 $('#origDot').style.background=BLUE;
 seg('#colorSeg','color'); seg('#bgSeg','bg'); seg('#sizeSeg','size',Number); seg('#qSeg','q',Number); seg('#fmtSeg','fmt');
 ['#cw','#ch'].forEach(s=>$(s).addEventListener('input',render));
